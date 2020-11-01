@@ -1,0 +1,17 @@
+#title {
+  margin-top: 10px;
+}
+
+body {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
