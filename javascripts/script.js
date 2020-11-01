@@ -45,9 +45,17 @@ function clickTile(x, y) {
 }
 
 function getDiagonalWin() {
-  if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) {
+  if (
+    grid[0][0] == grid[1][1] &&
+    grid[1][1] == grid[2][2] &&
+    grid[1][1] != "b"
+  ) {
     return grid[1][1];
-  } else if (grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2]) {
+  } else if (
+    grid[2][0] == grid[1][1] &&
+    grid[1][1] == grid[0][2] &&
+    grid[1][1] != "b"
+  ) {
     return grid[1][1];
   } else {
     return false;
@@ -55,11 +63,23 @@ function getDiagonalWin() {
 }
 
 function getHorizontalWin() {
-  if (grid[0][0] == grid[1][0] && grid[1][0] == grid[2][0]) {
+  if (
+    grid[0][0] == grid[1][0] &&
+    grid[1][0] == grid[2][0] &&
+    grid[0][0] != "b"
+  ) {
     return grid[0][0];
-  } else if (grid[0][1] == grid[1][1] && grid[1][1] == grid[2][1]) {
+  } else if (
+    grid[0][1] == grid[1][1] &&
+    grid[1][1] == grid[2][1] &&
+    grid[0][1] != "b"
+  ) {
     return grid[0][1];
-  } else if (grid[0][2] == grid[1][2] && grid[1][2] == grid[2][2]) {
+  } else if (
+    grid[0][2] == grid[1][2] &&
+    grid[1][2] == grid[2][2] &&
+    grid[0][2] != "b"
+  ) {
     return grid[0][2];
   } else {
     return false;
@@ -67,11 +87,23 @@ function getHorizontalWin() {
 }
 
 function getVerticalWin() {
-  if (grid[0][0] == grid[0][1] && grid[0][1] == grid[0][2]) {
+  if (
+    grid[0][0] == grid[0][1] &&
+    grid[0][1] == grid[0][2] &&
+    grid[0][0] != "b"
+  ) {
     return grid[0][0];
-  } else if (grid[1][0] == grid[1][1] && grid[1][1] == grid[1][2]) {
+  } else if (
+    grid[1][0] == grid[1][1] &&
+    grid[1][1] == grid[1][2] &&
+    grid[1][0] != "b"
+  ) {
     return grid[1][0];
-  } else if (grid[2][0] == grid[2][1] && grid[2][1] == grid[2][2]) {
+  } else if (
+    grid[2][0] == grid[2][1] &&
+    grid[2][1] == grid[2][2] &&
+    grid[2][0] != "b"
+  ) {
     return grid[2][0];
   } else {
     return false;
