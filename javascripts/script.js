@@ -19,7 +19,7 @@ function clickTile(x, y) {
   if (grid[x][y] != "b") {
     return;
   }
-  tile.src = player.toString() + ".png";
+  tile.src = "../images/game/" + player.toString() + ".png";
   grid[x][y] = player;
   if (player == "x") {
     player = "o";
@@ -40,6 +40,7 @@ function clickTile(x, y) {
   } else if (movesLeft() == false) {
     gameOver = true;
     message.innerHTML = "Tie";
+    document.getElementById("rs-btn").style.display = "";
   }
 }
 
@@ -122,7 +123,7 @@ function restart() {
   for (var i = 0; i < 3; i++) {
     for (var j = 0; j < 3; j++) {
       tile = document.getElementById(i.toString() + j.toString());
-      tile.src = "b.png";
+      tile.src = "../images/game/b.png";
     }
   }
   tile = -1;

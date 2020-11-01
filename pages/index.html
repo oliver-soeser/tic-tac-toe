@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- JS -->
-    <script defer src="./script.js"></script>
+    <script defer src="../javascripts/script.js"></script>
 
     <!-- CSS -->
     <link
@@ -16,28 +16,28 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./bootstrap.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../stylesheets/bootstrap.css" />
+    <link rel="stylesheet" href="../stylesheets/styles.css" />
 
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./apple-touch-icon.png"
+      href="../images/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon-32x32.png"
+      href="../images/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon-16x16.png"
+      href="../images/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
 
     <!-- Page Title -->
     <title>Tic Tac Toe</title>
@@ -47,25 +47,27 @@
     <br />
     <h5 id="message"></h5>
     <br />
+
+    <!-- Game board -->
     <input
       id="00"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(0, 0)"
     />
     <input
       id="10"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(1, 0)"
     />
     <input
       id="20"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(2, 0)"
     />
     <br />
@@ -73,21 +75,21 @@
       id="01"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(0, 1)"
     />
     <input
       id="11"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(1, 1)"
     />
     <input
       id="21"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(2, 1)"
     />
     <br />
@@ -95,25 +97,26 @@
       id="02"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(0, 2)"
     />
     <input
       id="12"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(1, 2)"
     />
     <input
       id="22"
       type="image"
       width="128px"
-      src="b.png"
+      src="../images/game/b.png"
       onclick="clickTile(2, 2)"
     />
     <br />
     <br />
+    <!-- Restart button -->
     <button id="rs-btn" class="btn btn-primary" onclick="restart()">
       Restart
     </button>
